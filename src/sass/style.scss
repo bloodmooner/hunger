@@ -1,0 +1,33 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@import 'blocks/buttons';
+@import 'blocks/titles';
+
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+@import 'libs/font';
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/about';
+@import 'blocks/team';
+@import 'blocks/booking';
+@import 'blocks/specialties';
+@import 'blocks/menu';
+@import 'blocks/events';
+@import 'blocks/gallery';
+@import 'blocks/contact';
+@import 'blocks/map';
+@import 'blocks/footer';
