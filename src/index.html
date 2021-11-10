@@ -53,33 +53,62 @@
         </aside>
         <aside class="promo__aside promo__aside-right">
             <div class="promo__social">
-                <div><img src="icons/social/facebook.svg" alt="Facebook"></div>
-                <div><img src="icons/social/twitter.svg" alt="Twitter"></div>
-                <div><img src="icons/social/instagram.svg" alt="Instagram"></div>
+                <div>
+                    <a href="#">
+                        <img src="icons/social/facebook.svg" alt="Facebook">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="icons/social/twitter.svg" alt="Twitter">
+                    </a>
+                    
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="icons/social/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
             </div>
         </aside>
         <div class="container">
             
             <div class="promo__header">
-                <div class="promo__menu promo__menu-left">
+                <nav class="promo__menu promo__menu-left">
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Team</li>
-                        <li>Booking</li>
+                        <li>
+                            <a class="promo__menu-link" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="promo__menu-link" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="promo__menu-link" href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a class="promo__menu-link" href="#booking">Booking</a>
+                        </li>
                     </ul>
-                </div>
+                </nav>
                 <div class="promo__logo">
                     <img src="icons/logo.svg" alt="Main Logo">
                 </div>
-                <div class="promo__menu promo__menu-right">
+                <nav class="promo__menu promo__menu-right">
                     <ul>
-                        <li>Menu</li>
-                        <li>Galerie</li>
-                        <li>Events</li>
-                        <li>Contact</li>
+                        <li>
+                            <a class="promo__menu-link" href="#menu">Menu</a>
+                        </li>
+                        <li>
+                            <a class="promo__menu-link" href="#gallery">Galerie</a>
+                        </li>
+                        <li>
+                            <a class="promo__menu-link" href="#events">Events</a>
+                        </li>
+                        <li>
+                            <a class="promo__menu-link" href="#contact">Contact</a>
+                        </li>
                     </ul>
-                </div>
+                </nav>
             </div>
             <div class="promo__wrapper">
                 <div class="promo__caption">Restaurant</div>
@@ -96,7 +125,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="contaier">
             <div class="about__wrapper">
                 <div class="about__descr">
@@ -118,7 +147,7 @@
         </div>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
         <div class="container">
             <div class="team__header">OUR TEAM</div>
             <div class="team__wrapper">
@@ -141,7 +170,7 @@
         </div>
     </section>
 
-    <section class="booking">
+    <section class="booking" id="booking">
         <div class="container">
             <div class="booking__wrapper">
                 <div class="booking__descr">
@@ -177,7 +206,7 @@
     </section>
 
 
-    <section class="specialties">
+    <section class="specialties" id="specialties">
         <div class="container">
             <div class="specialties__header">specialties</div>
             <div class="specialties__wrapper">
@@ -200,7 +229,7 @@
         </div>
     </section>
 
-    <section class="menu">
+    <section class="menu" id="menu">
         <div class="container">
             <h2 class="title title_fz36 menu__title">
                 Delicious menu
@@ -447,7 +476,7 @@
         </div>
     </section>
 
-    <section class="events">
+    <section class="events" id="events">
         <div class="container">
             <div class="events__header">private events</div>
             <div class="events__wrapper">
@@ -471,7 +500,7 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="gallery__wrapper">
             <div class="gallery__item">
                 <img class="gallery__image" src="img/gallery/gallery1.png" alt="gallery1">
@@ -488,7 +517,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h2 class="title title_fz36 menu__title">
                 Contact
@@ -535,14 +564,14 @@
         </div>
     </section>
 
-    <section class="map">
+    <section class="map" id="map">
 
     </section>
 
     <footer class="footer">
         <div class="container">
             <div class="footer__copyright">
-                © Copyright <span>Mindblister</span> 2020
+                Сайт разработан <span><a class="footer__copyright-link" href="https://customdev.site/" target="_blank">customdev.site</a></span> 2021
             </div>
         </div>
     </footer>

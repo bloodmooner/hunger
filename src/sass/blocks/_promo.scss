@@ -60,6 +60,12 @@
                 text-transform: uppercase;
             }
         }
+        &-link {
+            color: #FFFFFF;
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
     }
     &__logo {
         padding-top: 25px;
