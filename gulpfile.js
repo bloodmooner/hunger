@@ -1,6 +1,6 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync');
-const sass        = require('gulp-sass');
+const sass        = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
@@ -56,15 +56,15 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('icons', function () {
-    return gulp.src("src/icons/**/*")
-        .pipe(gulp.dest("dist/icons"))
+    return gulp.src("src/assets/svg/**/*")
+        .pipe(gulp.dest("dist/assets/svg"))
         .pipe(browserSync.stream());
 });
 
 gulp.task('images', function () {
-    return gulp.src("src/img/**/*")
+    return gulp.src("src/assets/img/**/*")
         .pipe(imagemin())
-        .pipe(gulp.dest("dist/img"))
+        .pipe(gulp.dest("dist/assets/img"))
         .pipe(browserSync.stream());
 });
 
