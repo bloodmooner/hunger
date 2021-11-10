@@ -6,6 +6,10 @@
         display: grid;
         grid-template-columns: repeat(2, 600px);
         column-gap: 30px;
+        @include for-desktop-up {
+            padding: 100px 0;
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     &__title {
         margin-top: 120px;
@@ -53,6 +57,10 @@
                 filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
                 border-radius: 5px;
                 z-index: -1;
+                @include for-desktop-up {
+                    width: 100%;
+                    height: auto;
+                }
             }
             &:before {
                 content: '';
@@ -67,6 +75,11 @@
                 border-radius: 5px;
                 filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
                 z-index: 1;
+                @include for-desktop-up {
+                    width: 200px;
+                    height: 200px;
+                    left: -100px;
+                }
             }
         }
         &-right {
@@ -76,6 +89,10 @@
                 height: 475px;
                 filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
                 border-radius: 5px;
+                @include for-desktop-up {
+                    width: 100%;
+                    height: auto;
+                }
             }
             &:after {
                 content: '';
@@ -89,6 +106,11 @@
                 border: 20px solid #E8C300;
                 border-radius: 5px;
                 filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+                @include for-desktop-up {
+                    width: 200px;
+                    height: 200px;
+                    right: -100px;
+                }
             }
         }
     }
@@ -112,6 +134,9 @@
                 display: block;
                 width: 351px;
             }
+            @include for-desktop-up {
+                right: 0;
+            }
         }
         &-right {
             top: 0px;
@@ -120,7 +145,13 @@
                 transform: rotate(-90deg) translate(-77%, -1150%);
                 display: block;
                 width: 351px;
+                @include for-desktop-up {
+                    transform: rotate(-90deg) translate(-67%, -1150%);
+                }
             }
+        }
+        @include for-desktop-up {
+            height: 100%;
         }
     }
     &__footer {

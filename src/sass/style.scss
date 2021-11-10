@@ -19,6 +19,9 @@
 .container {
     width: 1280px;
     margin: 0 auto;
+    @include for-desktop-up {
+        width: 900px;
+    }
 }
 section {
     max-width: 1920px;

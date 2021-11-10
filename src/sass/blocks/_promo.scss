@@ -1,5 +1,4 @@
 .promo {
-    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     min-height: 800px;
@@ -44,6 +43,9 @@
         display: grid;
         grid-template-columns: 535px 150px 535px;
         justify-content: space-between;
+        @include for-desktop-up {
+            grid-template-columns: 2fr 1fr 2fr;
+        }
     }
     &__menu {
         ul {
@@ -69,6 +71,11 @@
     }
     &__logo {
         padding-top: 25px;
+        @include for-desktop-up {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__caption {
         margin-top: 150px;

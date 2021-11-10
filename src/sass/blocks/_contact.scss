@@ -19,6 +19,9 @@
                 font-size: 14px;
                 color: #333333;
             }
+            @include for-desktop-up {
+                grid-template: 60px 120px 60px / 1fr 1fr 1fr ;
+            }
         }
     }
     &__block {
