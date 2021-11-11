@@ -92,6 +92,9 @@
     &__btn {
         grid-column: 3 / 4;
         width: 100%;
+        @include for-tablet-portrait-up {
+            padding: 0 10px;
+        }
         @include for-phone-only {
             padding: 0 10px;
         }
