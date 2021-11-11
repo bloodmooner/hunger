@@ -1,5 +1,14 @@
 .contact {
     padding: 100px 0 100px 0;
+    &__title {
+        margin-top: 100px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 48px;
+        @include for-tablet-landscape-up {
+            margin-top: 0;
+        }
+    }
     &__form {
         margin-top: 50px;
         form {
@@ -22,6 +31,9 @@
             @include for-desktop-up {
                 grid-template: 60px 120px 60px / 1fr 1fr 1fr ;
             }
+            @include for-tablet-landscape-up {
+                grid-template: 60px 120px 60px / 1fr 1fr 1fr ;
+            }
         }
     }
     &__block {
@@ -33,5 +45,8 @@
     &__btn {
         grid-column: 3 / 4;
         width: 100%;
+    }
+    @include for-tablet-landscape-up {
+        padding: 70px 0;
     }
 }

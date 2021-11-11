@@ -22,6 +22,9 @@
     @include for-desktop-up {
         width: 900px;
     }
+    @include for-tablet-landscape-up {
+        width: 750px;
+    }
 }
 section {
     max-width: 1920px;

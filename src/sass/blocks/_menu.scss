@@ -30,6 +30,9 @@
             justify-content: space-between;
             align-items: center;
             list-style-type: none;
+            @include for-tablet-landscape-up {
+                width: 100%;
+            }
             li {
                 margin-top: 0px;
                 display: inline;
@@ -63,6 +66,9 @@
         justify-content: space-between;
         @include for-desktop-up {
             grid-template-columns: repeat(3, 1fr);
+        }
+        @include for-tablet-landscape-up {
+            grid-template-columns: 1fr;
         }
     }
     &__subwrapper {

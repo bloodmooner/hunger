@@ -4,6 +4,9 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 360px;
+        @include for-tablet-landscape-up {
+            grid-template-rows: 1fr;
+        }
     }
 
     &__image {
