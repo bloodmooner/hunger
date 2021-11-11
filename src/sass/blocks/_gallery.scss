@@ -10,6 +10,9 @@
         @include for-tablet-portrait-up {
             grid-template-rows: 1fr;
         }
+        @include for-phone-only {
+            grid-template-rows: 1fr;
+        }
     }
 
     &__image {

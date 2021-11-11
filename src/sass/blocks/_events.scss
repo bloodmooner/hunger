@@ -20,6 +20,11 @@
             grid-template-columns: 1fr;
             row-gap: 60px;
         }
+        @include for-phone-only {
+            padding: 30px 0;
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
     }
     &__title {
         margin-top: 120px;
@@ -75,6 +80,10 @@
                     width: 100%;
                     height: auto;
                 }
+                @include for-phone-only {
+                    width: 100%;
+                    height: auto;
+                }
             }
             &:before {
                 content: '';
@@ -103,6 +112,9 @@
                 @include for-tablet-portrait-up {
                     display: none;
                 }
+                @include for-phone-only {
+                    display: none;
+                }
             }
         }
         &-right {
@@ -117,6 +129,10 @@
                     height: auto;
                 }
                 @include for-tablet-portrait-up {
+                    width: 100%;
+                    height: auto;
+                }
+                @include for-phone-only {
                     width: 100%;
                     height: auto;
                 }
@@ -147,9 +163,17 @@
                 @include for-tablet-portrait-up {
                     display: none;
                 }
+                @include for-phone-only {
+                    display: none;
+                }
             }
         }
         @include for-tablet-landscape-up {
+            display: flex;
+            justify-content: center;
+            z-index: 100;
+        }
+        @include for-phone-only {
             display: flex;
             justify-content: center;
             z-index: 100;
@@ -181,6 +205,9 @@
             @include for-tablet-portrait-up {
                 right: 0;
             }
+            @include for-phone-only {
+                right: 0;
+            }
         }
         &-right {
             top: 0px;
@@ -192,6 +219,9 @@
                 @include for-desktop-up {
                     transform: rotate(-90deg) translate(-67%, -1150%);
                 }
+                @include for-phone-only {
+                    transform: rotate(-90deg) translate(-27%, -1150%);
+                }
             }
             @include for-tablet-landscape-up {
                 left: 135px;
@@ -201,6 +231,9 @@
             height: 100%;
         }
         @include for-tablet-portrait-up {
+            height: 100%;
+        }
+        @include for-phone-only {
             height: 100%;
         }
     }
