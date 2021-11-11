@@ -11,8 +11,13 @@
             grid-template-columns: repeat(2, 1fr);
         }
         @include for-tablet-landscape-up {
-            padding: 100px 0;
+            padding: 70px 0;
             grid-template-columns: repeat(2, 1fr);
+        }
+        @include for-tablet-portrait-up {
+            padding: 50px 0;
+            grid-template-columns: 1fr;
+            row-gap: 40px;
         }
     }
     &__title {
@@ -22,6 +27,9 @@
         line-height: 48px;
         @include for-tablet-landscape-up {
             margin-top: 20px;
+        }
+        @include for-tablet-portrait-up {
+            margin-top: 0;
         }
     }
     &__divider {
@@ -55,6 +63,10 @@
                 width: 100%;
                 height: auto;
             }
+            @include for-tablet-portrait-up {
+                width: 100%;
+                height: auto;
+            }
         }
         &:after {
             content: '';
@@ -78,6 +90,11 @@
                 height: 125px;
                 right: -60px;
                 border: 15px solid #E8C300;
+            }
+            @include for-tablet-portrait-up {
+                width: 100px;
+                height: 100px;
+                border: 10px solid #E8C300;
             }
         }
     }

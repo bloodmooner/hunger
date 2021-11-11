@@ -15,6 +15,11 @@
             grid-template-columns: 1fr;
             row-gap: 60px;
         }
+        @include for-tablet-portrait-up {
+            padding: 50px 0;
+            grid-template-columns: 1fr;
+            row-gap: 60px;
+        }
     }
     &__title {
         margin-top: 120px;
@@ -66,6 +71,10 @@
                     width: 100%;
                     height: auto;
                 }
+                @include for-tablet-portrait-up {
+                    width: 100%;
+                    height: auto;
+                }
             }
             &:before {
                 content: '';
@@ -91,6 +100,9 @@
                     border: 15px solid #E8C300;
                     left: 50px;
                 }
+                @include for-tablet-portrait-up {
+                    display: none;
+                }
             }
         }
         &-right {
@@ -101,6 +113,10 @@
                 filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
                 border-radius: 5px;
                 @include for-desktop-up {
+                    width: 100%;
+                    height: auto;
+                }
+                @include for-tablet-portrait-up {
                     width: 100%;
                     height: auto;
                 }
@@ -127,6 +143,9 @@
                     height: 175px;
                     border: 15px solid #E8C300;
                     right: 50px;;
+                }
+                @include for-tablet-portrait-up {
+                    display: none;
                 }
             }
         }
@@ -159,6 +178,9 @@
             @include for-desktop-up {
                 right: 0;
             }
+            @include for-tablet-portrait-up {
+                right: 0;
+            }
         }
         &-right {
             top: 0px;
@@ -178,6 +200,9 @@
         @include for-desktop-up {
             height: 100%;
         }
+        @include for-tablet-portrait-up {
+            height: 100%;
+        }
     }
     &__footer {
         margin-top: 60px;
@@ -192,6 +217,10 @@
         }
         @include for-tablet-landscape-up {
             font-size: 16px;
+            margin-top: 40px;
+        }
+        @include for-tablet-portrait-up {
+            font-size: 18px;
             margin-top: 40px;
         }
     }

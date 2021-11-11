@@ -7,6 +7,9 @@
         @include for-tablet-landscape-up {
             grid-template-rows: 1fr;
         }
+        @include for-tablet-portrait-up {
+            grid-template-rows: 1fr;
+        }
     }
 
     &__image {

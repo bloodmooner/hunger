@@ -13,6 +13,9 @@
         @include for-tablet-landscape-up {
             grid-template-columns: 1fr;
         }
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr;
+        }
     }
     &__title {
         margin-top: 50px;
@@ -23,6 +26,9 @@
             margin-top: 25px;
         }
         @include for-tablet-landscape-up {
+            margin-top: 0;
+        }
+        @include for-tablet-portrait-up {
             margin-top: 0;
         }
     }
@@ -79,6 +85,9 @@
         @include for-tablet-landscape-up {
             display: none;
         }
+        @include for-tablet-portrait-up {
+            display: none;
+        }
     }
     &__form {
         padding-top: 20px;
@@ -92,6 +101,9 @@
                 grid-template-columns: repeat(2, 1fr);
             }
             @include for-tablet-landscape-up {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include for-tablet-portrait-up {
                 grid-template-columns: repeat(2, 1fr);
             }
             input {

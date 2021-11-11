@@ -20,6 +20,9 @@
         text-align: center;
         width: 565px;
         margin: 20px auto 0px auto;
+        @include for-tablet-portrait-up {
+            width: 100%;
+        }
     }
     &__list {
         ul {
@@ -31,6 +34,9 @@
             align-items: center;
             list-style-type: none;
             @include for-tablet-landscape-up {
+                width: 100%;
+            }
+            @include for-tablet-portrait-up {
                 width: 100%;
             }
             li {
@@ -68,6 +74,9 @@
             grid-template-columns: repeat(3, 1fr);
         }
         @include for-tablet-landscape-up {
+            grid-template-columns: 1fr;
+        }
+        @include for-tablet-portrait-up {
             grid-template-columns: 1fr;
         }
     }

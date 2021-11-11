@@ -7,6 +7,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
+        @include for-tablet-portrait-up {
+            padding: 50px 0;
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
     }
     &__title {
         margin-top: 120px;
@@ -16,6 +21,9 @@
         color: #ffffff;
         @include for-tablet-landscape-up {
             margin-top: 15px;
+        }
+        @include for-tablet-portrait-up {
+            margin-top: 0;
         }
     }
     &__divider {
@@ -60,6 +68,10 @@
                 width: 100%;
                 height: auto;
             }
+            @include for-tablet-portrait-up {
+                width: 100%;
+                height: auto;
+            }
         }
         &:before {
             content: '';
@@ -84,6 +96,9 @@
                 height: 125px;
                 border: 15px solid #E8C300;
                 left: -60px;
+            }
+            @include for-tablet-portrait-up {
+                display: none;
             }
         }
     }

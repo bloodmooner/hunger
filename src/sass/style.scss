@@ -25,6 +25,9 @@
     @include for-tablet-landscape-up {
         width: 750px;
     }
+    @include for-tablet-portrait-up {
+        width: 500px;
+    }
 }
 section {
     max-width: 1920px;

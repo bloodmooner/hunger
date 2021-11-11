@@ -19,7 +19,13 @@
                     width: 351px;
                     font-weight: bold;
                     color: #ffffff;
+                    @include for-tablet-portrait-up {
+                        transform: rotate(-90deg) translate(-30%, -920%);
+                    }
                 }
+            }
+            @include for-tablet-portrait-up {
+                top: 275px;
             }
         }
         &-right {
@@ -27,6 +33,10 @@
             top: 340px;
             width: 60px;
             height: 220px;
+            @include for-tablet-portrait-up {
+                right: 15px;
+                top: 255px;
+            }
         }
     }
     &__social {
@@ -48,6 +58,9 @@
         }
         @include for-tablet-landscape-up {
             grid-template-columns: 2fr 1fr 2fr;
+        }
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr;
         }
     }
     &__menu {
@@ -71,13 +84,18 @@
                 color: #FFFFFF;
             }
         }
-        /* &-left, &-right {
+        &-left, &-right {
             display: none;
-        } */
+        }
     }
     &__logo {
         padding-top: 25px;
         @include for-desktop-up {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @include for-tablet-portrait-up {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -93,6 +111,9 @@
         color: #ffffff;
         letter-spacing: 8px;
         @include for-tablet-landscape-up {
+            margin-top: 40px;
+        }
+        @include for-tablet-portrait-up {
             margin-top: 40px;
         }
     }
