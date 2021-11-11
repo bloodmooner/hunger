@@ -256,5 +256,9 @@
             font-size: 18px;
             margin-top: 40px;
         }
+        @include for-phone-only {
+            font-size: 18px;
+            margin-top: 30px;
+        }
     }
 }
