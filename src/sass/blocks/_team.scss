@@ -3,10 +3,12 @@
     margin: 0 auto;
     background: url('../../img/master-chef/master-chef-bg.png') no-repeat 50%/cover;
     &__wrapper {
-        padding: 100px 0;
+        padding: 42px 0 100px 0;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: space-between;
+        grid-template-columns: 475px 600px;
+        column-gap: 72px;
+        width: 1050px;
+        margin: 0 auto;
         @include for-tablet-portrait-up {
             padding: 50px 0;
             grid-template-columns: 1fr;

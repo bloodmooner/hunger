@@ -2,10 +2,12 @@
     
     background: url('../../img/events/events-bg.png') no-repeat 50%/cover;
     &__wrapper {
-        padding: 100px 80px;
+        padding: 43px 80px;
         display: grid;
-        grid-template-columns: repeat(2, 600px);
-        column-gap: 30px;
+        grid-template-columns: repeat(2, 475px);
+        column-gap: 80px;
+        width: 1185px;
+        margin: 0 auto; 
         @include for-desktop-up {
             padding: 100px 0;
             grid-template-columns: repeat(2, 1fr);
@@ -141,8 +143,8 @@
                 content: '';
                 position: absolute;
                 top: 50%;
-                right: 0;
-                transform: translateY(-50%);
+                right: -50%;
+                transform: translate3D(-50%, -50%, 0);
                 width: 250px;
                 height: 250px;
                 background-color: transparent;
@@ -192,8 +194,8 @@
             text-transform: uppercase;
         }
         &-left {
-            top: 0px;
-            right: 125px;
+            top: 0;
+            right: 0;
             span {
                 transform: rotate(90deg) translate(55%, 1150%);
                 display: block;
@@ -238,8 +240,8 @@
         }
     }
     &__footer {
-        margin-top: 60px;
-        padding-bottom: 60px;
+        
+        padding-bottom: 40px;
         text-align: center;
         font-weight: 400;
         font-size: 12px;
