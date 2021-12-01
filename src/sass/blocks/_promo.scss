@@ -33,12 +33,15 @@
                     text-align: center;
                 }
             }
+            @include for-tablet-landscape-up {
+                left: 70px;
+            }
             @include for-tablet-portrait-up {
                 top: 275px;
             }
             @include for-phone-only {
                 left: 50%;
-                top: 615px;
+                top: 600px;
                 transform: translateX(-50%);
             }
         }
@@ -47,6 +50,9 @@
             top: 340px;
             width: 60px;
             height: 220px;
+            @include for-tablet-landscape-up {
+                right: 70px;
+            }
             @include for-tablet-portrait-up {
                 right: 15px;
                 top: 255px;
@@ -183,6 +189,9 @@
         width: 60px;
         height: 60px;
         margin: 50px auto 0px auto;
+        @include for-phone-only {
+            margin: 90px auto 0 auto;
+        }
     }
     &__btn {
         &-a {

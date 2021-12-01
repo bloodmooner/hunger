@@ -150,6 +150,10 @@
         font-size: 18px;
         line-height: 18px;
         color: #333333;
+        font-family: 'Banny';
+        text-transform: uppercase;
+        font-weight: 600;
+        @include for-desktop-up {}
     }
     &__price {
         font-size: 18px;
