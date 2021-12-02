@@ -131,6 +131,9 @@
                 font-size: 14px;
                 color: #333333;
                 padding: 20px;
+                &:focus {
+                    border: 1px solid #e8c300;
+                }
                 @include for-phone-only {
                     &:nth-child(1) {
                         grid-row: 1 / 2;
@@ -164,6 +167,11 @@
         grid-column: 1 / 3;
         grid-row: 4 / 5;
         width: 100%;
+        &:hover {
+            color: #FFFFFF;
+            background-color: #cfae00;
+            text-decoration: none;
+        }
         @include for-phone-only {
             grid-row: 7 / 8;
         }

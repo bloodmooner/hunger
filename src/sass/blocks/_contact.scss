@@ -32,6 +32,9 @@
                 font-weight: 400;
                 font-size: 14px;
                 color: #333333;
+                &:focus {
+                    border: 1px solid #e8c300;
+                }
             }
             input {
                 @include for-tablet-portrait-up {
@@ -112,10 +115,20 @@
     &__text {
         font-size: 12px;
         margin-left: 10px;
+        color: #000000;
+        &:hover {
+            text-decoration: underline;
+            color: #cfae00;
+        }
     }
     &__btn {
         grid-column: 3 / 4;
         width: 100%;
+        &:hover {
+            color: #FFFFFF;
+            background-color: #cfae00;
+            text-decoration: none;
+        }
         @include for-tablet-portrait-up {
             padding: 0 10px;
         }
